@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col">
     <EditorMenu :editor="editor" class="" />
-    <div class="flex-grow bg-gray-400 overflow-hidden" id="editor-content">
-      <EditorContent :editor="editor" class="h-full bg-white overflow-auto" />
+    <div class="flex-grow overflow-hidden h-full" id="editor-content">
+      <EditorContent :editor="editor" class="h-full overflow-auto" />
     </div>
   </div>
 </template>
