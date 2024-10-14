@@ -11,9 +11,9 @@ const content = ref('')
 </script>
 
 <template>
-  <div class="h-screen flex flex-col">
+  <div class="flex flex-col">
     <ResizablePanelGroup direction="horizontal">
-      <ResizablePanel>
+      <ResizablePanel :default-size="30">
         <div class="p-2 font-bold bg-gray-100">File Explorer</div>
         <div class="flex-grow overflow-auto">
           File explorer content goes here
@@ -29,7 +29,7 @@ const content = ref('')
             </div>
           </ResizablePanel>
           <ResizableHandle class="hover:bg-blue-300" />
-          <ResizablePanel>
+          <ResizablePanel :default-size="30">
             <div class="p-2 font-bold bg-gray-100">Metadata</div>
             <div class="flex-grow overflow-auto p-2">{{ content }}</div>
           </ResizablePanel>
